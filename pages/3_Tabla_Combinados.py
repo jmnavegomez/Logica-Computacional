@@ -115,7 +115,7 @@ valor = 0
 
 listaCombinado = [i[1] for i in st.session_state["combinado"]]
 
-if st.button("Calcula", disabled = visible):
+if st.button("Calcula", disabled = not (len(st.session_state["combinado"])>0)):
     omega,letrasAux,soluNp = solucionCombinados(listaCombinado)
     df = pd.DataFrame(soluNp,columns=letrasAux)
 
