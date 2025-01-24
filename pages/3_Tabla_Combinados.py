@@ -87,7 +87,13 @@ with st.expander("PROGRAMA DE COMPROBACION DE EXPRESIONES LOGICAS"):
 
 expresion = st.text_input("Escriba la expresión", value="(A&b)")
 
-if st.button("Expresión "+str(st.session_state["contador"]+1)):
+
+comp1 = previaParentesis(expresion)
+comp2 = previaCompleta(expresion)
+comp3 = previaContenido(expresion)
+visible = not (comp1 and comp2 and not comp3)
+
+if st.button("Expresión "+str(st.session_state["contador"]+1),disabled=visible):
     st.session_state["combinado"].append([mayus[(mayus.index("S")+st.session_state["contador"])],expresion])
     st.session_state["contador"] += 1
 
@@ -103,11 +109,6 @@ with col1:
 with col2:
     if st.button("Reset"):
         reset("combinado")
-
-comp1 = previaParentesis(expresion)
-comp2 = previaCompleta(expresion)
-comp3 = previaContenido(expresion)
-visible = not (comp1 and comp2 and not comp3)
 
 omega = 1
 valor = 0
