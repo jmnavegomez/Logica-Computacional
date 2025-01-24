@@ -41,6 +41,10 @@ def previaCompleta(sentencia):
     
     return correcto 
     
+#Comprobacion previa del contenido
+def previaContenido(expresion):
+    return (expresion=="" or expresion == " ")
+
 # Encontrar letras
 def letrasSentencia(sentencia):
     separa = Counter(sentencia)

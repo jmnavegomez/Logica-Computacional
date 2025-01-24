@@ -7,7 +7,7 @@ from collections import Counter
 from string import ascii_uppercase as mayus
 from string import ascii_lowercase as minus
 
-from pages.scripts.funciones_segundo_orden import principal,previaParentesis,previaCompleta
+from pages.scripts.funciones_segundo_orden import principal,previaParentesis,previaCompleta,previaContenido
 
 
 def decimalABinario(n): 
@@ -52,7 +52,8 @@ expresion = st.text_input("Escriba la expresión", value="(A&b)")
 
 comp1 = previaParentesis(expresion)
 comp2 = previaCompleta(expresion)
-visible = not (comp1 and comp2)
+comp3 = previaContenido(expresion)
+visible = not (comp1 and comp2 and not comp3)
 
 omega = 1
 valor = 0

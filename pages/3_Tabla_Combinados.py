@@ -7,7 +7,7 @@ from collections import Counter
 from string import ascii_uppercase as mayus
 from string import ascii_lowercase as minus
 
-from pages.scripts.funciones_segundo_orden import combinado,previaParentesis,previaCompleta
+from pages.scripts.funciones_segundo_orden import combinado,previaParentesis,previaCompleta,previaContenido
 from pages.scripts.funciones_segundo_orden import letrasSentencia as ls2
 
 
@@ -97,7 +97,7 @@ st.dataframe(df0)
 col1, col2 = st.columns(2)
 
 with col1:
-    if st.button("Borrado"):
+    if st.button("Borrado") and st.session_state["contador"]>0:
         borrado("combinado",st.session_state["contador"]-1)
 
 with col2:
@@ -106,7 +106,8 @@ with col2:
 
 comp1 = previaParentesis(expresion)
 comp2 = previaCompleta(expresion)
-visible = not (comp1 and comp2)
+comp3 = previaContenido(expresion)
+visible = not (comp1 and comp2 and not comp3)
 
 omega = 1
 valor = 0
