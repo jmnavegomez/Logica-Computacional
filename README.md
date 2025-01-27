@@ -1,6 +1,6 @@
 # Logica Computacional
- Archivo de cálculo lógico
- Explicación y licencia del código de Archivo de cálculo lógico. La licencia del presente programa es GPL v3:
+## Archivo de cálculo lógico
+ Explicación y licencia del código de archivo de cálculo lógico. La licencia del presente programa es GPL v3:
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
