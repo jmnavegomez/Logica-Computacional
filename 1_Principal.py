@@ -3,6 +3,9 @@ from string import ascii_uppercase as mayus
 from string import ascii_lowercase as minus
 
 st.title("Resolución de sentencias lógicas")
+
+st.video("https://youtu.be/rCxlTp0loWg")
+
 texto = """PROGRAMA DE COMPROBACION DE EXPRESIONES LOGICAS
 
 - Código escrito y desarrollado por: José Manuel Naveiro Gómez

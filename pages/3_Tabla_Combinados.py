@@ -44,6 +44,9 @@ def solucionCombinados(listaCombinado):
     return omega,letrasAux,soluNp
 
 st.title("Resolución de sentencias lógicas")
+
+st.video("https://youtu.be/Mz0Ujo4HNjc")
+
 texto = """
 - Código escrito y desarrollado por: José Manuel Naveiro Gómez
 - Código bajo licencia GPL-V3
@@ -120,3 +123,4 @@ if st.button("Calcula", disabled = not (len(st.session_state["combinado"])>0)):
     df = pd.DataFrame(soluNp,columns=letrasAux)
 
     st.dataframe(df)
+

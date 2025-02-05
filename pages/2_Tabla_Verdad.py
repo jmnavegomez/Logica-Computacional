@@ -45,6 +45,8 @@ Estructura para las expresiones:
 
 4. Todas las operaciones se empezarán y terminarán con paréntesis""".format(mayus)
 
+st.video("https://youtu.be/tbUr_C4KgE4")
+
 with st.expander("PROGRAMA DE COMPROBACION DE EXPRESIONES LOGICAS"):
     st.markdown(texto)
 

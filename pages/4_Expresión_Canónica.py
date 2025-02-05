@@ -55,6 +55,8 @@ Estructura para las expresiones:
 4. Todas las operaciones se empezarán y terminarán con paréntesis
 5. Poner la cantidad de variables y seleccionar los valores que son verdaderos en la tabla.""".format(mayus)
 
+st.video("https://youtu.be/zXlBvzR1nDs")
+
 with st.expander("PROGRAMA DE COMPROBACION DE EXPRESIONES LOGICAS"):
     st.markdown(texto)
 
@@ -85,3 +87,4 @@ evento = st.dataframe(df,
 
 if st.button("Expresión", disabled = visible):
     calculoCano(df,evento.selection.rows)
+
